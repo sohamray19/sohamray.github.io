@@ -10,7 +10,7 @@ Hi, I am Soham Ray.
 I am a computer science master's student at Cornell University, with a passion for building scalable, intelligent solutions to complex, real-world problems.
 </div>
 <div style= "margin-top: 0vh;  margin-bottom: 1vh;  margin-right: 5vh;  margin-left: 5vh; padding-top: 0vh;  padding-bottom: 2vh;  padding-right: 2vh;  padding-left: 2vh; font-family: helvetica, sans-serif;font-size:2vh; color: black; ">
-Here's a link to my </span><a href="Career_Fair.pdf">resume</a></span>, and my </span><a href="https://www.linkedin.com/in/sohamray19/">linkedin</a></span>.
+Here's a link to my </span><a href="Career_Fair.pdf">resume</a></span>, my </span><a href="https://www.linkedin.com/in/sohamray19/">linkedin</a></span> and my </span><a href="https://github.com/sohamray19">github</a></span>.
 </div>
 <div style= "margin-top: 2vh;  margin-bottom: 1vh;  margin-right: 5vh;  margin-left: 5vh; padding-top: 0vh;  padding-bottom: 2vh;  padding-right: 2vh;  padding-left: 2vh; font-family: helvetica, sans-serif;font-size:2vh; color: black; ">
 <b> What interests me, and what have I done about it? </b>
@@ -57,11 +57,11 @@ object oriented design, web development, REST API's, git and scrum.
 <div style= "margin-top: 1vh;  margin-bottom: 1vh;  margin-right: 5vh;  margin-left: 5vh; padding-top: 0vh;  padding-bottom: 2vh;  padding-right: 2vh;  padding-left: 2vh; font-family: helvetica, sans-serif;font-size:2vh; color: black; ">
 <ul>
   <li>
-    <b><u>Software Engineering</u></b>
+    <b><u>Software Engineering</u> (Industry Experience)</b>
     <br><br>
 I am a software engineer at heart. I enjoy designing, constructing and deploying software solutions.
 <br>
-Here's what I've done so far in the industry:
+Here's what I've done so far:
 <ul>
   <br>
   <li>
@@ -91,7 +91,7 @@ For this project, I mostly used Python.
 </li>
 <br>
 <li>
-<b><u>Machine Learning</u></b>
+<b><u>Machine Learning </u>(Industry Experience)</b>
 <br><br>
 I am deeply interested in machine learning algorithms, specifically NLP. I am also interested in scaling these algorithms to fit large datasets.
 <br>
@@ -109,18 +109,93 @@ Our final model improved classification accuracy by <b>11%</b> on the inplace sy
 <br><br>
 For this project, I worked with <b>python</b> and used the <b>Tensorflow</b>, <b>NLTK</b> and <b>scipy</b> libraries.
 </li>
+<br>
 <li>
-</span><a href="http://www.a2iot.com">ASquared IoT</a></span>: Here, I'll focus on the machine learning backend of the web-app I built at ASquared IoT. To perform sound classification in a factory effectively, I built a denoising model to extract the sound of interest,
+</span><a href="http://www.a2iot.com">ASquared IoT</a></span>: Here, I'll focus on the <b>machine learning backend</b> of the web-app I built at ASquared IoT. To perform sound classification in a factory effectively, I built a denoising model to extract the sound of interest,
 and a classification model to label the weld as satisfactory or defective.
+<br><br>
+So far, theres been limited research on sound classification, especially for industrial sounds. To tackle this problem, and to convert our sound classification problem into an <b>image classification</b> problem, I converted the sound signals to spectrograms (a visual representation of sound). To analyse these images, I used a <b>convolutional neural network</b>, achieving an accuracy of <b>71%</b>.
+Unfortunately, this wasn't accurate enough for testing real welded goods. When I delved deeper, I found the reason to be noise in the input sound. To mitigate this,
+I constructed denoising models using <b>statistical (fourier transforms, spectral subtraction, etc.)</b> and ML methods. Another deep learning approach, <b>deep denoising auto encoders</b>, provided the best results and boosted projected classification accuracy to <b>84%</b>.
+<br><br>
+Drawback: A drawback of the final model was little variance in the input data. Unfortunately, all data was collected by our team in person, with help from field engineers in a factory we partnered with, restricting its magnitude and diversity.
+<br><br>
+For this project, I worked with <b>python</b> and used the <b>Tensorflow</b>, <b>scipy</b> and <b>librosa</b> libraries.
 </li>
 </ul>
 </li>
+<br>
+<li>
+  <b><u>Personal Projects</u> (Academic Experience)</b>
+  <br><br>
+To learn new concepts and technologies, I have developed multiple software projects, in both ML and software engineering.
+<br>
+Here's some of what I've done so far. Check out my </span><a href="https://github.com/sohamray19">github</a></span> for other projects!
+<ul>
+<br>
+<li>
+  <b> Master’s project in Data-driven, Hyper-local Air Quality Modeling</b>
+  <br>
+In my first semester at Cornell, I built data engineering pipelines and ML models to predict hotspots and observe patterns (in air pollution) in global metropolitan areas (London and Oakland) to help curb rising air pollution levels worldwide.
+I achieved an RMSE of <b>0.06</b> on a regression model I built for predicting air pollution concentrations.
+<br>
+Here's my </span><a href="zhang.pdf">report</a></span> on the same.
+</li>
+<br>
+<li>
+  <b>Bachelor's project in Insurance Policy Database Management System</b>
+  <br>
+I constructed a web application with role-based access control, interactive payment reminders, payback estimate on insurance maturity, and usage analysis reports for customers/agents to ensure one-stop solution.
+<br>
+Here's my </span><a href="https://github.com/sohamray19/InsurancePolicyManagement">github repo</a></span> on the same.
+</li>
+<br>
+<li>
+  <b>XFlow: A Real-Time Tweet Streaming Pipeline</b>
+  <br>
+  I built a real-time tweet streaming pipeline with a deep learning sentiment analysis model for instant scoring. I used Apache Kafka, Flume and Spark Streaming for the pipeline, to make it scalable and fault tolerant.
+  I used tensorflow to build the deep learning model, and Flask to build a restful service to connect the pipeline to the model. Finally, I used maven as a build tool for dependency management. This project taught me how to deal
+  with large volumes of data efficiently, and swiftly.
+  <br>
+  Here's my </span><a href="https://github.com/sohamray19/Xflow">github repo</a></span> on the same.
+</li>
+<br>
+<li>
+  <b>Deceptive Opinion Spam Classification</b>
+  <br>
+I constructed an opinion spam classifier that is able to weed out fake reviews written by real people. Explored usage of language models and naive bayes classifier using different linguistic and preprocessing techniques. I achieved an accuracy of <b>91%</b>.
+<br>
+Here's my </span><a href="nlp1.pdf">report</a></span> on the same.
+</li>
+<br>
+<li>
+  <b>Metaphor Detection with Sequence Labeling Models </b>
+  I implemented part of speech tagging and metaphor detection on a given text corpus. Learned feature engineering, hidden markov models and feedforward neural networks to get the observation probability matrix. I achieved an F1 score of <b>66%</b> and an accuracy of <b>85%</b>.
+  <br>
+  Here's my </span><a href="metaphor.pdf">report</a></span> on the same.
+</li>
+<br>
+<li>
+  <b>Story Completion Prediction (Cloze Test) </b>
+  <br>
+  I worked with feature selection and engineering, classification models and pretrained language models (OpenAI GPT-2) to correctly predict the correct ending of a 4 story sentence given 2 endings. I achieved an accuracy of <b>87%</b>.
+  <br>
+  Here's my </span><a href="roc_stories.pdf">report</a></span> on the same.
+</li>
+<br>
+<li>
+  <b> Classification of Donald Trump’s Tweets </b>
+  Constructed an ML model to evaluate the hypothesis that Trump’s tweets from his iphone are written by him and those from his android are written by his team, by classifying them using NLP techniques. I achieved an accuracy of <b>86%</b>.
+</li>
+</ul>
+</li>
+
 </ul>
 </div>
 <div style= "margin-top: 2vh;  margin-bottom: 1vh;  margin-right: 5vh;  margin-left: 5vh; padding-top: 0vh;  padding-bottom: 2vh;  padding-right: 2vh;  padding-left: 2vh; font-family: helvetica, sans-serif;font-size:2vh; color: black; ">
 <b> How to get in touch with me? </b>
 </div>
 <div style= "margin-top: 0vh;  margin-bottom: 1vh;  margin-right: 5vh;  margin-left: 5vh; padding-top: 0vh;  padding-bottom: 2vh;  padding-right: 2vh;  padding-left: 2vh; font-family: helvetica, sans-serif;font-size:2vh; color: black; ">
-Contact: Send me a message on </span><a href="mailto:sr2259@cornell.com">mail</a></span> or </span><a href="https://www.linkedin.com/in/sohamray19/">linkedin</a></span>, or give me call at (917)-753-6259.
+Contact: Send me a </span><a href="mailto:sr2259@cornell.com">mail</a></span>, message me on </span><a href="https://www.linkedin.com/in/sohamray19/">linkedin</a></span>, or give me call at (917)-753-6259.
 </div>
 </body>
